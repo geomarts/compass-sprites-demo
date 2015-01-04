@@ -1,0 +1,125 @@
+// google font
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+// required for vertical rhythm
+@import "compass/typography";
+
+// required for CSS3 properties
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+
+// configuration variables
+//$icons-layout:smart;
+$icons-sprite-dimensions:true;
+
+// required for basic spriting
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+/* Compass mixin for displaying the custom classes. 
+*  Make sure to commenting out the all-icons-sprites mixin, otherwise you'll have duplicated classes. 
+*  .creator {
+*      @include icons-sprite(zuckerberg);
+*   }
+*/
+
+/* Compass advanced functions and mixins for displaying sprites. 
+*  Make sure to commenting out the "icons/*.png" and all-icons-sprites mixins.
+*    
+*     $icons: sprite-map("icons/*.png", $layout: smart);
+*    
+*    .creator {
+*      background: sprite($icons, zuckerberg);
+*      @include sprite-dimensions($icons, zuckerberg);
+*    }
+*/
+
+// base styles
+$body-color: #65594D;
+$primary-font: 'Lato', sans-serif;
+@include establish-baseline;
+
+body {
+	@include reset-box-model;
+	font-family: $primary-font;
+	background:lighten($body-color, 25%);
+	//@include debug-vertical-alignment;
+}
+
+div {
+	@include box-shadow(0px 8px 6px -6px rgba(0, 0, 0, 0.4), 0px -8px 6px -6px rgba(0, 0, 0, 0.4));
+	@include border-radius(8px);
+	padding: rhythm(1, 24px) 0;
+	background: lighten($body-color, 21%);
+	margin: rhythm(1, 12px) auto;
+	width: 60%;
+	@media (max-width: 600px) {
+    	width: 90%;
+  	}
+	text-align: center;
+  	h1 {
+		@include adjust-font-size-to(36px);
+		@include hide-text;
+		@include border-radius(50%);
+		border: 5px solid lighten($body-color, 40%);
+		margin: 0 auto rhythm(1, 24px);
+ 		@include transition(all 0.3s ease-in-out);
+	}
+
+	h2 { 
+		width: 50%;
+		@media (max-width: 1050px) {
+    		width: 90%;
+    		background:transparent;
+    		@include adjust-font-size-to(20px);
+  		}
+		@include adjust-font-size-to(24px);
+		background: lighten($body-color, 17%);
+		@include border-radius(5px);
+		margin: rhythm(1, 24px) auto; 
+	}
+
+	p {
+		padding: rhythm(1, 36px);
+		margin: rhythm(1, 24px) 0;
+		span {
+			font-weight:bold;
+			font-style:italic;
+		}
+		&:last-of-type{
+			border-top: 1px solid lighten($body-color, 19%);
+		}  
+	}
+
+	ul {
+		@include inline-block-list(20px);
+		text-align: center;
+		li {
+			height:32px;
+		}
+	}
+
+	a {
+		display:block;
+		@include hide-text;
+		outline:none;
+		@include transition(background-position .3s ease-in-out);
+		&:active {
+			@include transition-property(none);
+		}
+
+	}
+
+	> a {
+			margin: 0 auto;
+			@include border-radius(50%);
+			border: 1px solid lighten($body-color, 25%);
+			@include transition(border-color .4s ease-in-out);
+			&:hover {
+				border: 1px solid lighten($body-color, 40%);
+			}
+		}
+
+}

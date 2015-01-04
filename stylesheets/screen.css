@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+/* line 104, icons/*.png */
+.icons-sprite, .icons-arrow-down, .icons-facebook, .icons-twitter, .icons-zuckerberg {
+  background-image: url('../images/icons-s82ea51d311.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-down {
+  background-position: 0 0;
+  height: 40px;
+  width: 40px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -104px;
+  height: 32px;
+  width: 32px;
+}
+/* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook:hover, .icons-facebook.facebook-hover {
+  background-position: 0 -72px;
+}
+/* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook:active, .icons-facebook.facebook-active {
+  background-position: 0 -40px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -200px;
+  height: 32px;
+  width: 32px;
+}
+/* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter:hover, .icons-twitter.twitter-hover {
+  background-position: 0 -168px;
+}
+/* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter:active, .icons-twitter.twitter-active {
+  background-position: 0 -136px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-zuckerberg {
+  background-position: 0 -232px;
+  height: 190px;
+  width: 190px;
+}
+
+/* Compass mixin for displaying the custom classes. 
+*  Make sure to commenting out the all-icons-sprites mixin, otherwise you'll have duplicated classes. 
+*  .creator {
+*      @include icons-sprite(zuckerberg);
+*   }
+*/
+/* Compass advanced functions and mixins for displaying sprites. 
+*  Make sure to commenting out the "icons/*.png" and all-icons-sprites mixins.
+*    
+*     $icons: sprite-map("icons/*.png", $layout: smart);
+*    
+*    .creator {
+*      background: sprite($icons, zuckerberg);
+*      @include sprite-dimensions($icons, zuckerberg);
+*    }
+*/
+/* line 106, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 44, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  background: #a7998b;
+}
+
+/* line 51, ../sass/screen.scss */
+div {
+  -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.4), 0px -8px 6px -6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.4), 0px -8px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.4), 0px -8px 6px -6px rgba(0, 0, 0, 0.4);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  padding: 1em 0;
+  background: #9e8f7f;
+  margin: 2em auto;
+  width: 60%;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  /* line 51, ../sass/screen.scss */
+  div {
+    width: 90%;
+  }
+}
+/* line 62, ../sass/screen.scss */
+div h1 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #c8bfb6;
+  margin: 0 auto 1em;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 71, ../sass/screen.scss */
+div h2 {
+  width: 50%;
+  font-size: 1.5em;
+  line-height: 2em;
+  background: #958474;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 1em auto;
+}
+@media (max-width: 1050px) {
+  /* line 71, ../sass/screen.scss */
+  div h2 {
+    width: 90%;
+    background: transparent;
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
+}
+/* line 84, ../sass/screen.scss */
+div p {
+  padding: 0.66667em;
+  margin: 1em 0;
+}
+/* line 87, ../sass/screen.scss */
+div p span {
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 91, ../sass/screen.scss */
+div p:last-of-type {
+  border-top: 1px solid #99897a;
+}
+/* line 96, ../sass/screen.scss */
+div ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  text-align: center;
+}
+/* line 49, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_inline-block-list.scss */
+div ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 99, ../sass/screen.scss */
+div ul li {
+  height: 32px;
+}
+/* line 104, ../sass/screen.scss */
+div a {
+  display: block;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  outline: none;
+  -moz-transition: background-position 0.3s ease-in-out;
+  -o-transition: background-position 0.3s ease-in-out;
+  -webkit-transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.3s ease-in-out;
+}
+/* line 109, ../sass/screen.scss */
+div a:active {
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+/* line 115, ../sass/screen.scss */
+div > a {
+  margin: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #a7998b;
+  -moz-transition: border-color 0.4s ease-in-out;
+  -o-transition: border-color 0.4s ease-in-out;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+}
+/* line 120, ../sass/screen.scss */
+div > a:hover {
+  border: 1px solid #c8bfb6;
+}
